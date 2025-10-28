@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D954B3052EA9CD1A009B0FCF /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = D954B3042EA9CD1A009B0FCF /* GoogleMaps */; };
+		D954B3322EB04E8D009B0FCF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D954B3312EB04E8D009B0FCF /* MapKit.framework */; };
 		D9A5A2352EA9CA3100D18AC6 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = D9A5A2342EA9CA3100D18AC6 /* GoogleMaps */; };
 		D9A5A2372EA9CBD800D18AC6 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = D9A5A2362EA9CBD800D18AC6 /* GoogleMaps */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D954B2F82EA9CC36009B0FCF /* uber-reproduction-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uber-reproduction-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D954B3312EB04E8D009B0FCF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D954B3322EB04E8D009B0FCF /* MapKit.framework in Frameworks */,
 				D9A5A2372EA9CBD800D18AC6 /* GoogleMaps in Frameworks */,
 				D9A5A2352EA9CA3100D18AC6 /* GoogleMaps in Frameworks */,
 				D954B3052EA9CD1A009B0FCF /* GoogleMaps in Frameworks */,
@@ -50,6 +53,7 @@
 		D954B3032EA9CD1A009B0FCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D954B3312EB04E8D009B0FCF /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,6 +266,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to use your location to find you nearby drivers and rides";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -302,6 +307,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to use your location to find you nearby drivers and rides";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

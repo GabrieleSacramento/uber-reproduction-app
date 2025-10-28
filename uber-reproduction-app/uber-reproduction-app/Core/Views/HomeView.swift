@@ -7,19 +7,14 @@
 //
 
 import SwiftUI
-import GoogleMaps
 
-struct ContentView: View {
-	var view = MapView()
+struct HomeView: View {
+	
 	var body: some View {
-		VStack {
-			Text("Uber App").font(.title)
-			view
-		}
-		.padding()
+		UberMapViewRepresentable().ignoresSafeArea()
 	}
 }
 
 #Preview {
-	ContentView()
+	HomeView()
 }
