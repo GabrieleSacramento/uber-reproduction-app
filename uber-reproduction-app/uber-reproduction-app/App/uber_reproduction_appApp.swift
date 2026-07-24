@@ -10,12 +10,11 @@ import GoogleMaps
 
 @main
 struct uber_reproduction_appApp: App {
-	init() {
-		GMSServices.provideAPIKey("AIzaSyCMdn3JsAu_4b_ejtJALZQZMMPkt3cU2nQ")
-	}
+	@StateObject var locationViewModel = LocationSearchViewModel()
     var body: some Scene {
         WindowGroup {
 			HomeView()
+				.environmentObject(locationViewModel)
         }
     }
 }
